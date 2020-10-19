@@ -1,0 +1,11 @@
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\bin\Debug\netcoreapp3.1\Login Setup.exe
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\bin\Debug\netcoreapp3.1\Login Setup.deps.json
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\bin\Debug\netcoreapp3.1\Login Setup.runtimeconfig.json
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\bin\Debug\netcoreapp3.1\Login Setup.runtimeconfig.dev.json
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\bin\Debug\netcoreapp3.1\Login Setup.dll
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\bin\Debug\netcoreapp3.1\Login Setup.pdb
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\obj\Debug\netcoreapp3.1\Login Setup.csprojAssemblyReference.cache
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\obj\Debug\netcoreapp3.1\Login Setup.AssemblyInfoInputs.cache
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\obj\Debug\netcoreapp3.1\Login Setup.AssemblyInfo.cs
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\obj\Debug\netcoreapp3.1\Login Setup.dll
+C:\Users\Ryan Simas\OneDrive - SNHU\Soft 2\Login Setup\Login Setup\obj\Debug\netcoreapp3.1\Login Setup.pdb
