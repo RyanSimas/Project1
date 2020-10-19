@@ -65,7 +65,7 @@
             this.UsernameTextBox.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.UsernameTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.UsernameTextBox.CausesValidation = false;
-            this.UsernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.UsernameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.UsernameTextBox.Location = new System.Drawing.Point(354, 150);
             this.UsernameTextBox.Name = "UsernameTextBox";
             this.UsernameTextBox.Size = new System.Drawing.Size(197, 20);
