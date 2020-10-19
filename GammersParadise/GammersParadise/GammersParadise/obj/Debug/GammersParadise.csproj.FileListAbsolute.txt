@@ -2,9 +2,10 @@ C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\bin\Debug
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\bin\Debug\GammersParadise.exe
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\bin\Debug\GammersParadise.pdb
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.csprojAssemblyReference.cache
+C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.Form1.resources
+C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.LogInScreen.resources
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.Properties.Resources.resources
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.csproj.GenerateResource.cache
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.csproj.CoreCompileInputs.cache
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.exe
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.pdb
-C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.Form1.resources
