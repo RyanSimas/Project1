@@ -9,3 +9,4 @@ C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.csproj.CoreCompileInputs.cache
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.exe
 C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.pdb
+C:\Users\marsb\Desktop\GammersParadise\GammersParadise\GammersParadise\obj\Debug\GammersParadise.SignInScreen.resources

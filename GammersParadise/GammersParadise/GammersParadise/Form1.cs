@@ -14,7 +14,7 @@ namespace GammersParadise
     {
         public Form1()
         {
-            
+
             InitializeComponent();
         }
 
@@ -25,9 +25,17 @@ namespace GammersParadise
         LogInScreen LGS = new LogInScreen();
         private void Login_Click(object sender, EventArgs e)
         {
-            
+
             LGS.ShowDialog();
             this.Hide();
+        }
+       
+        SignInScreen SIS = new SignInScreen();
+        private void SignInButton_Click(object sender, EventArgs e)
+        {
+            SIS.ShowDialog();
+            this.Hide();
+
         }
     }
 }
