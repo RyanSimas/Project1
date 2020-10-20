@@ -26,14 +26,14 @@ namespace GammersParadise
         private void Login_Click(object sender, EventArgs e)
         {
 
-            LGS.ShowDialog();
-            this.Hide();
+            LGS.Show();
+            Hide();
         }
        
         SignInScreen SIS = new SignInScreen();
         private void SignInButton_Click(object sender, EventArgs e)
         {
-            SIS.ShowDialog();
+            SIS.Show();
             this.Hide();
 
         }

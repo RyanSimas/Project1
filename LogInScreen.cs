@@ -23,15 +23,8 @@ namespace GammersParadise
 
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
+       
+       
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
@@ -71,6 +64,14 @@ namespace GammersParadise
                 MessageBox.Show("Invalid username or password Please try agian!", "Invlaid Log in atempt");
             }
             
+
+        }
+        
+        private void BackToMainScreen_Click(object sender, EventArgs e)
+        {
+            Form1 f1 = new Form1();
+            Hide();
+            f1.Show();
 
         }
     }

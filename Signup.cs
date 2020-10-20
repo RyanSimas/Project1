@@ -95,6 +95,20 @@ namespace Login_Setup
             cmd.ExecuteNonQuery();
         }
 
+        public bool CheckPassword(string UserPassword)
+        {
+            if(UserPassword.Length < 8 )
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+            
+
 
     }
 

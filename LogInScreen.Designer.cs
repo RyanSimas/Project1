@@ -33,6 +33,7 @@
             this.UsernameTextBox = new System.Windows.Forms.TextBox();
             this.PaswordTextbox = new System.Windows.Forms.TextBox();
             this.SubmitButton = new System.Windows.Forms.Button();
+            this.BackToMainScreen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // UserNameLabel
@@ -90,11 +91,21 @@
             this.SubmitButton.UseVisualStyleBackColor = true;
             this.SubmitButton.Click += new System.EventHandler(this.SubmitButton_Click);
             // 
+            // BackToMainScreen
+            // 
+            this.BackToMainScreen.Location = new System.Drawing.Point(12, 396);
+            this.BackToMainScreen.Name = "BackToMainScreen";
+            this.BackToMainScreen.Size = new System.Drawing.Size(105, 42);
+            this.BackToMainScreen.TabIndex = 6;
+            this.BackToMainScreen.Text = "<--- Back";
+            this.BackToMainScreen.UseVisualStyleBackColor = true;
+            this.BackToMainScreen.Click += new System.EventHandler(this.BackToMainScreen_Click);
+            // 
             // LogInScreen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.BackToMainScreen);
             this.Controls.Add(this.SubmitButton);
             this.Controls.Add(this.PaswordTextbox);
             this.Controls.Add(this.UsernameTextBox);
@@ -102,7 +113,9 @@
             this.Controls.Add(this.UserNameLabel);
             this.MinimumSize = new System.Drawing.Size(16, 39);
             this.Name = "LogInScreen";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LogInScreen";
+            this.UseWaitCursor = true;
             this.Load += new System.EventHandler(this.LogInScreen_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,5 +128,6 @@
         private System.Windows.Forms.TextBox UsernameTextBox;
         private System.Windows.Forms.TextBox PaswordTextbox;
         private System.Windows.Forms.Button SubmitButton;
+        private System.Windows.Forms.Button BackToMainScreen;
     }
 }

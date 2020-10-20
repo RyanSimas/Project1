@@ -35,10 +35,34 @@ namespace GammersParadise
 
         private void SignInSubmitButton_Click(object sender, EventArgs e)
         {
-
+          
             Signup NewUser = new Signup(FNameTB.Text, LNameTB.Text, DOBTB.Text, UserNTB.Text, PasswordTB.Text, EmailTB.Text);
-            NewUser.SendtoDatabase();
+            if (NewUser.CheckPassword(PasswordTB.Text.ToString()) == false)
+            {
+                ErrorMessage.Text = "The Password Must be 8 Characters long!";
+            }
+            else if (NewUser.CheckPassword(PasswordTB.Text.ToString()) == true)
+            {
+                ErrorMessage.Text = "";
+                NewUser.SendtoDatabase();
+            }
+        }
 
-        } 
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BackToMainScreen_Click(object sender, EventArgs e)
+        {
+            Form1 f2 = new Form1();
+            Hide();
+            f2.Show();
+        }
     }
 }
