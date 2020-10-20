@@ -36,15 +36,12 @@ namespace GammersParadise
         private void SignInSubmitButton_Click(object sender, EventArgs e)
         {
           
-            Signup NewUser = new Signup(FNameTB.Text, LNameTB.Text, DOBTB.Text, UserNTB.Text, PasswordTB.Text, EmailTB.Text);
-            if (NewUser.CheckPassword(PasswordTB.Text.ToString()) == false)
+            Signup NewUser = new Signup(FNameTB.Text, LNameTB.Text, dobPicker.Value.ToString(), UserNTB.Text, PasswordTB.Text, EmailTB.Text);
+            ErrorMessage.Text = NewUser.checkInput(UserNTB.Text.ToString(), PasswordTB.Text.ToString(),dobPicker.Value.ToString("yyyy-MM-dd"), EmailTB.Text.ToString());
+            if(ErrorMessage.Text.ToString() == "")
             {
-                ErrorMessage.Text = "The Password Must be 8 Characters long!";
-            }
-            else if (NewUser.CheckPassword(PasswordTB.Text.ToString()) == true)
-            {
-                ErrorMessage.Text = "";
                 NewUser.SendtoDatabase();
+                MessageBox.Show("Thank you for Signing Up!");
             }
         }
 
@@ -63,6 +60,16 @@ namespace GammersParadise
             Form1 f2 = new Form1();
             Hide();
             f2.Show();
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

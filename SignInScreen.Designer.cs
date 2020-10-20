@@ -36,7 +36,6 @@
             this.EmailLabel = new System.Windows.Forms.Label();
             this.FNameTB = new System.Windows.Forms.TextBox();
             this.LNameTB = new System.Windows.Forms.TextBox();
-            this.DOBTB = new System.Windows.Forms.TextBox();
             this.UserNTB = new System.Windows.Forms.TextBox();
             this.PasswordTB = new System.Windows.Forms.TextBox();
             this.EmailTB = new System.Windows.Forms.TextBox();
@@ -55,6 +54,7 @@
             this.label12 = new System.Windows.Forms.Label();
             this.ErrorMessage = new System.Windows.Forms.Label();
             this.BackToMainScreen = new System.Windows.Forms.Button();
+            this.dobPicker = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // FirstName
@@ -118,47 +118,40 @@
             // 
             this.FNameTB.Location = new System.Drawing.Point(348, 126);
             this.FNameTB.Name = "FNameTB";
-            this.FNameTB.Size = new System.Drawing.Size(100, 20);
+            this.FNameTB.Size = new System.Drawing.Size(185, 20);
             this.FNameTB.TabIndex = 6;
             // 
             // LNameTB
             // 
             this.LNameTB.Location = new System.Drawing.Point(348, 152);
             this.LNameTB.Name = "LNameTB";
-            this.LNameTB.Size = new System.Drawing.Size(100, 20);
+            this.LNameTB.Size = new System.Drawing.Size(185, 20);
             this.LNameTB.TabIndex = 7;
-            // 
-            // DOBTB
-            // 
-            this.DOBTB.Location = new System.Drawing.Point(348, 178);
-            this.DOBTB.Name = "DOBTB";
-            this.DOBTB.Size = new System.Drawing.Size(100, 20);
-            this.DOBTB.TabIndex = 8;
             // 
             // UserNTB
             // 
             this.UserNTB.Location = new System.Drawing.Point(348, 205);
             this.UserNTB.Name = "UserNTB";
-            this.UserNTB.Size = new System.Drawing.Size(100, 20);
+            this.UserNTB.Size = new System.Drawing.Size(185, 20);
             this.UserNTB.TabIndex = 9;
             // 
             // PasswordTB
             // 
             this.PasswordTB.Location = new System.Drawing.Point(348, 228);
             this.PasswordTB.Name = "PasswordTB";
-            this.PasswordTB.Size = new System.Drawing.Size(100, 20);
+            this.PasswordTB.Size = new System.Drawing.Size(185, 20);
             this.PasswordTB.TabIndex = 10;
             // 
             // EmailTB
             // 
             this.EmailTB.Location = new System.Drawing.Point(348, 253);
             this.EmailTB.Name = "EmailTB";
-            this.EmailTB.Size = new System.Drawing.Size(100, 20);
+            this.EmailTB.Size = new System.Drawing.Size(185, 20);
             this.EmailTB.TabIndex = 11;
             // 
             // SignInSubmitButton
             // 
-            this.SignInSubmitButton.Location = new System.Drawing.Point(359, 314);
+            this.SignInSubmitButton.Location = new System.Drawing.Point(409, 308);
             this.SignInSubmitButton.Name = "SignInSubmitButton";
             this.SignInSubmitButton.Size = new System.Drawing.Size(75, 23);
             this.SignInSubmitButton.TabIndex = 13;
@@ -169,7 +162,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(480, 181);
+            this.label1.Location = new System.Drawing.Point(566, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 14;
@@ -178,7 +171,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(480, 205);
+            this.label2.Location = new System.Drawing.Point(566, 202);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 13);
             this.label2.TabIndex = 15;
@@ -187,7 +180,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(480, 231);
+            this.label3.Location = new System.Drawing.Point(566, 228);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(171, 13);
             this.label3.TabIndex = 16;
@@ -197,7 +190,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(480, 260);
+            this.label4.Location = new System.Drawing.Point(566, 257);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(146, 13);
             this.label4.TabIndex = 17;
@@ -269,18 +262,19 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(268, 414);
+            this.label11.Location = new System.Drawing.Point(285, 414);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(306, 13);
             this.label11.TabIndex = 24;
             this.label11.Text = "All Data with the * is a rquired field and must be filled in correctly";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label12.Font = new System.Drawing.Font("Monotype Corsiva", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(317, 29);
+            this.label12.Location = new System.Drawing.Point(362, 30);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(122, 41);
             this.label12.TabIndex = 25;
@@ -305,12 +299,24 @@
             this.BackToMainScreen.UseVisualStyleBackColor = true;
             this.BackToMainScreen.Click += new System.EventHandler(this.BackToMainScreen_Click);
             // 
+            // dobPicker
+            // 
+            this.dobPicker.Location = new System.Drawing.Point(348, 179);
+            this.dobPicker.MaxDate = new System.DateTime(2021, 12, 31, 0, 0, 0, 0);
+            this.dobPicker.MinDate = new System.DateTime(1910, 1, 1, 0, 0, 0, 0);
+            this.dobPicker.Name = "dobPicker";
+            this.dobPicker.Size = new System.Drawing.Size(185, 20);
+            this.dobPicker.TabIndex = 28;
+            this.dobPicker.Value = new System.DateTime(2020, 10, 20, 11, 37, 3, 0);
+            this.dobPicker.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            // 
             // SignInScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dobPicker);
             this.Controls.Add(this.BackToMainScreen);
             this.Controls.Add(this.ErrorMessage);
             this.Controls.Add(this.label12);
@@ -329,7 +335,6 @@
             this.Controls.Add(this.EmailTB);
             this.Controls.Add(this.PasswordTB);
             this.Controls.Add(this.UserNTB);
-            this.Controls.Add(this.DOBTB);
             this.Controls.Add(this.LNameTB);
             this.Controls.Add(this.FNameTB);
             this.Controls.Add(this.EmailLabel);
@@ -357,7 +362,6 @@
         private System.Windows.Forms.Label EmailLabel;
         private System.Windows.Forms.TextBox FNameTB;
         private System.Windows.Forms.TextBox LNameTB;
-        private System.Windows.Forms.TextBox DOBTB;
         private System.Windows.Forms.TextBox UserNTB;
         private System.Windows.Forms.TextBox PasswordTB;
         private System.Windows.Forms.TextBox EmailTB;
@@ -376,5 +380,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label ErrorMessage;
         private System.Windows.Forms.Button BackToMainScreen;
+        private System.Windows.Forms.DateTimePicker dobPicker;
     }
 }

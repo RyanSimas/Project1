@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using System.Collections.Specialized;
 
 namespace Login_Setup
 {
@@ -94,7 +95,37 @@ namespace Login_Setup
 
             cmd.ExecuteNonQuery();
         }
+        public bool CheckUsername(string userUsername)
+        {
+            string dataB_Username;
+            string connstring = @"server = gammersparadise.ckcxvzkwbpvs.us-east-1.rds.amazonaws.com;userid=admin;password=WqG7E<v~;database =GammersParadise;";
+            MySqlConnection conn = null;
 
+            conn = new MySqlConnection(connstring);
+            conn.Open();
+            string sql = "SELECT username FROM USERINFO;";
+            var cmd = new MySqlCommand(sql, conn);
+
+            MySqlDataReader rdr = cmd.ExecuteReader();
+
+
+            while (rdr.Read())
+            {
+                dataB_Username = rdr.GetString(0);
+
+                if(dataB_Username == userUsername)
+                {
+                    return false;
+                }
+                
+            }
+
+            //If every row from the database doesnt equal the users entered username then return true
+            return true;
+
+
+            
+        }
         public bool CheckPassword(string UserPassword)
         {
             if(UserPassword.Length < 8 )
@@ -107,6 +138,62 @@ namespace Login_Setup
             }
         }
 
+        public bool CheckEmail(string UserEmail)
+        {
+            var counter = 0;
+
+            for(int i = 0; i < UserEmail.Length; i++)
+            {
+                if(UserEmail[i] == '@')
+                {
+                    counter++;
+                }
+                if(UserEmail[i] == '.')
+                {
+                    counter++;
+                }
+                
+            }
+
+            if (counter > 2)
+                return false;
+
+            else if (counter == 2)
+                return true;
+            else
+                return false;
+
+        }
+
+        public string checkInput(string userUsername, string userPassword, string DOB, string userEmail )
+        {
+            if ( CheckPassword(userPassword) == false)
+            {
+                return  "Password Must be 8 Characters long!";
+            }
+            else if (CheckPassword(userPassword) == true)
+            {
+                if (CheckEmail(userEmail) == false)
+                {
+                    return "Email must Contain a \" @ \"  and \" . \" ";
+                }
+                else if(CheckEmail(userEmail) == true)
+                {
+
+                    if (CheckUsername(userUsername) == false)
+                    {
+                        return "The username needs to be unique";
+                    }
+                    else
+                    {
+                        return "";
+                    }
+                }
+            }
+
+            return "";
+
+        }
             
 
 
